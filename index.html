@@ -20,7 +20,7 @@
         height: 100vh;
         width: 100vw;
         margin: 0;
-        padding: 7vw 60vw 0 10vw;
+        padding: 7vw 50vw 3vw 10vw;
         font-size: 18px;
         line-height: 2em;
         font-family: Helvetica, Arial, sans-serif;
@@ -38,18 +38,31 @@
         margin: 0.5em 0;
       }
       p {
-        max-width: 500px;
+        max-width: 600px;
       }
-
+      a {
+        /* background-color: rgba(246, 239, 28, 0.3); */
+        color: #0057ff;
+      }
       #pic {
         position: absolute;
         right: 0;
         top: 0;
         pointer-events: none;
         height: 100vh;
-        width: 50vw;
+        width: 40vw;
         margin: 0;
-        background: center / cover no-repeat url("img/pic_2.jpg");
+        background: center / cover no-repeat url("img/pic_3.jpg");
+      }
+
+      /* Smaller desktop */
+      @media screen and (min-width: 440px) and (max-width: 1000px) {
+        #text {
+          padding: 10vw;
+        }
+        #pic {
+          display: none;
+        }
       }
 
       /* Mobile */
@@ -77,16 +90,17 @@
   </head>
   <body>
     <div id="text">
-      <img src="img/logo.png" /><br />
+      <img src="img/logo2.png" /><br />
       <div class="title">Ramped Solutions</div>
       <p>
         Ramped is a product consulting company focused on helping ramp up
-        solutions that draw down carbon and reverse climate change. We have
-        primarily been focused on how to quantify and verify carbon removal via
+        solutions that draw down carbon and reverse climate change. We've worked
+        on building platforms to quantify and verify carbon removal via
         regenerative agriculture to build carbon removal markets like
         <a href="https://nori.com">Nori</a> and
-        <a href="https://ecosystemservicesmarket.org">ESMC</a>.<br /><br />
-
+        <a href="https://ecosystemservicesmarket.org">ESMC</a>. Currently we are
+        working on accelerating the transition to 100% renewable energy with
+        <a href="https://ever.green">Evergreen</a>.
         <a href="mailto:hi@ramped.co">Reach out</a> if you think we could help.
       </p>
     </div>
